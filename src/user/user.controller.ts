@@ -23,9 +23,9 @@ import { Role } from 'src/auth/enums/role.enum';
 import { RolesGuard } from 'src/auth/guard/roles.guard';
 // import { JwtGuard } from 'src/auth/guard';
 
-// @Roles(Role.ADMIN)
-// @UseGuards(RolesGuard)
-// @UseGuards(AuthGuard)
+@Roles(Role.ADMIN)
+@UseGuards(RolesGuard)
+@UseGuards(AuthGuard)
 @Controller('users')
 export class UserController {
   constructor(private userService: UserService) {}
