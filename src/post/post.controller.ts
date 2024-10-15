@@ -7,9 +7,9 @@ import { Role } from 'src/auth/enums/role.enum';
 import { AuthGuard } from '../auth/guard/auth.guard';
 import { RolesGuard } from 'src/auth/guard/roles.guard';
 
-@Roles(Role.ADMIN)
-@UseGuards(RolesGuard)
-@UseGuards(AuthGuard)
+// @Roles(Role.ADMIN)
+// @UseGuards(RolesGuard)
+// @UseGuards(AuthGuard)
 @Controller('posts')
 export class PostController {
 
