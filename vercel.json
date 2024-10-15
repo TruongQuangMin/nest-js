@@ -1,11 +1,12 @@
 {
     "version": 2,
+
     "functions": {
-      "src/**/*.ts": {
+      "api/**/*.ts": {
       "maxDuration": 10
       }
     },
 
-    "rewrites": [{ "source": "/(.*)", "destination": "/src" }]
+    "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
   }
   

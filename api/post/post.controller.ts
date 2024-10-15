@@ -2,10 +2,10 @@ import { Controller, Post, Body, Query, Get, ParseIntPipe, Param, Put, UseGuards
 import { Post as PostModel } from '@prisma/client';
 import { PostService } from './post.service';
 import { CreatePostDto, PostFilterType, PostPaginationResponseType, UpdatePostDto } from './dto/post.dto';
-import { Roles } from 'src/auth/decorators/role.decorator';
-import { Role } from 'src/auth/enums/role.enum';
+import { Roles } from 'api/auth/decorators/role.decorator';
+import { Role } from 'api/auth/enums/role.enum';
 import { AuthGuard } from '../auth/guard/auth.guard';
-import { RolesGuard } from 'src/auth/guard/roles.guard';
+import { RolesGuard } from 'api/auth/guard/roles.guard';
 
 // @Roles(Role.ADMIN)
 // @UseGuards(RolesGuard)

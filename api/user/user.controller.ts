@@ -18,9 +18,9 @@ import {
 import { UserService } from './user.service';
 import { User } from '@prisma/client';
 import { AuthGuard } from '../auth/guard/auth.guard';
-import { Roles } from 'src/auth/decorators/role.decorator';
-import { Role } from 'src/auth/enums/role.enum';
-import { RolesGuard } from 'src/auth/guard/roles.guard';
+import { Roles } from 'api/auth/decorators/role.decorator';
+import { Role } from 'api/auth/enums/role.enum';
+import { RolesGuard } from 'api/auth/guard/roles.guard';
 // import { JwtGuard } from 'src/auth/guard';
 
 @Roles(Role.ADMIN)
