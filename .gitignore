@@ -1,5 +1,6 @@
 # compiled output
 /dist 
+/node_modules
 /build
 
 # Logs
@@ -55,4 +56,4 @@ pids
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 .vercel
-
+node_modules
